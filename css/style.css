@@ -1,0 +1,628 @@
+/*Estilos css*/
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --light-bg: #eee;
+    --border-bold: .5rem solid var(--black);
+    --border-light: .2rem solid var(--black);
+    --border-one: .1rem solid var(--black);
+    --blanco: #ffffff;
+	--oscuro: #212121;
+	--primario: #FFC107;
+	--secundario: #0097A7;
+	--gris: #757575;
+}
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow: hidden;
+    transition: .2s linear !important;
+}
+
+body.active {
+    padding-left: 35rem;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 5rem;
+}
+
+
+
+section {
+    padding: 2rem 7%;
+}
+
+.heading {
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #ffff;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    border-radius: .9rem;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: rgb(212, 140, 51);
+
+}
+
+/*Código de apartado de header*/
+
+.header {                         
+    background-image: linear-gradient(109.6deg, rgb(212, 140, 51) 71.8%, rgb(255, 171, 0) 71.8%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 3rem;
+    color: #000;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.header .navbar a:hover{
+    color: #fff;
+}
+
+.header .icon-redes a {
+    margin: 0 1rem;
+    font-size: 3rem;
+    color: #000;
+}
+
+.header .icon-redes a:hover{
+    color: #fff;
+    transform:  rotate(360deg);
+}
+
+#menu-btn {
+    display: none;
+}
+
+/* código sección inicio*/
+section {
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.inicio {
+    padding-top: 10rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    min-height: 10vh;
+}
+
+.inicio .image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: .5rem;
+}
+
+.inicio .contenido {
+    flex: 1 1 40rem;
+}
+
+.inicio .contenido h4 {
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+.inicio .contenido span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background-color: rgb(253, 216, 53);
+    border-radius: .8rem;
+}
+
+/*Código apartado acerca*/
+.heading {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.heading span {
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: rgb(212, 140, 51);
+}
+
+.acerca h2{
+    color: rgb(212, 140, 51);
+}
+
+.acerca .datos p {
+    margin: 1rem auto;
+    max-width: 70rem;
+    line-height: 1.5;
+    font-size: 1.7rem;
+    text-align: justify;
+    text-transform: none;
+}
+
+.acerca .datos .bio {
+    margin: 3rem 0;
+}
+
+.acerca .datos .bio h3 {
+    padding: 1rem;
+    display: inline-block;
+    margin: 1rem;
+    background-color: rgb(253, 216, 53);
+    border-radius: .9rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--black);
+    text-transform: none;
+}
+
+.acerca .datos .bio span{
+    font-weight: bold;
+    color: var(--black);
+}
+
+/*Código de apartado de Servicios*/
+
+.servicios {
+    border-radius: .9rem;
+    background-color: rgb(253, 216, 53);
+
+}
+
+.servicios .heading{
+    padding-top: 3rem;
+}
+
+.servicios .heading span{
+    color: #fff;
+}
+
+.servicios .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.servicios .box-container .box {
+    padding: 3rem 2rem;
+    border-radius: .9rem;
+    background-color: #fce72a;
+}
+
+.servicios .box-container .box i {
+    font-size: 5rem;
+    margin-bottom: .5rem;
+    color: #000;
+}
+
+.servicios .box-container .box h3 {
+    margin: 1rem 0;
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: normal;
+}
+
+.servicios .box-container .box p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.servicios .box-container .box:hover {
+    background-color: #fff;
+}
+
+.servicios .box-container .box:hover i {
+    color: #000;
+    transform:  rotate(360deg);
+}
+
+.servicios .box-container .box:hover p,
+h3 {
+    color: #000;
+}
+
+/*código para habilidades*/
+.habilidades {
+    padding-top: 6rem;
+}
+
+.habilidades span{
+    color: rgb(3, 169, 244);
+}
+
+.habilidades .skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.habilidades .skills .box i {
+    font-size: 5rem;
+}
+
+.habilidades .skills .box i:hover{
+    transform:  rotate(360deg);
+}
+
+.habilidades .skills .box span{
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/*Código sección Educación*/
+
+.academico .educa-exp {
+    margin: 3rem 0;
+    padding-top: 2rem;
+}
+
+.academico .educa-exp .heading{
+    color: rgb(212, 140, 51);
+}
+
+.academico .educa-exp span{
+    color: rgb(253, 216, 53);
+}
+
+.academico .educa-exp .row {
+    display: inline;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.academico .educa-exp .row .box-container {
+    flex: 1 1 40 rem;
+}
+
+.academico .educa-exp .row .box-container .title {
+    padding: 1.5rem;
+    font-size: 2rem;
+    background-color: rgb(253, 216, 53);
+    border-radius: .4rem;
+}
+
+.academico .educa-exp .row .box-container .box {
+    text-align: left;
+    margin: 1.5rem 0;
+    background-color: var(--light-bg);
+    border-radius: .4rem;
+}
+
+.academico .educa-exp .row .box-container .box span {
+    font-size: 2rem;
+    color: #000;
+    line-height: 2;
+}
+
+.academico .educa-exp .row .box-container h2 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.academico .educa-exp .row .box-container .box h3 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 1rem 0;
+    color: rgb(212, 120, 51)
+}
+
+.academico .educa-exp .row .box-container .box p {
+    line-height: 1.5;
+    font-size: 1.7rem;
+    line-height: 1.5;
+}
+
+/*Código apartado portafolio*/
+
+.portafolio .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.portafolio .box-container img {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .6rem;
+}
+
+.portafolio .box-container .box h3 {
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+.portafolio .box-container .box span {
+    font-size: 1.7rem;
+}
+
+.portafolio .box-container:hover .box {
+    opacity: .2;
+}
+
+.portafolio .box-container .box:hover {
+    opacity: 1;
+}
+
+/* Código  de contacto y footer*/
+/* Seccion Contacto */
+/*******************************/
+/*Contacto*/
+
+.contacto{
+    padding-top: 7rem;
+}
+
+.contacto span{
+    color: #000;
+}
+
+.formulario{
+    background-color:var(--gris);
+    width: min(90rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primario);
+}
+
+
+.campo{
+    margin-bottom: 1rem;
+
+}
+
+.campo label{
+    color: var(--blanco);
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+/******************************/
+
+/* footer*/
+
+.footer {
+    text-align: center;
+    background-color: var(--black);
+    padding: 3rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.footer span {
+    color: var(--black);
+}
+
+
+.footer{
+    background-image: linear-gradient(109.6deg, rgb(3, 169, 244) 71.8%, rgb(253, 216, 53) 71.8%);
+}
+.footer .box-container {
+   margin-top: 2rem;
+}
+
+.footer .box-container .box {
+    padding: 1rem;
+    display: inline-block;
+    align-content: space-between;
+}
+
+.footer .box-container .box i {
+    font-size: 1.7rem;
+}
+
+.footer .box-container .box h3 {
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+.footer .box-container .box p {
+    font-size: 1.7rem;
+    text-transform: none;
+}
+
+.copy{
+    padding-top: 1rem;
+    font-weight: bolder;
+    color: rgb(253, 216, 53);
+}
+
+.copy h3{
+    color: #000;
+}
+
+.copy span{
+    color: #fff;
+}
+
+.copy .logo{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 3rem;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media (max-width:820px) {
+    html {
+        font-size: 52%;
+    }
+
+    .header {
+        padding: 1.2rem 1.7rem;
+    }
+    
+}
+
+@media (max-width:772px) {
+
+    html {
+        font-size: 45%;
+    }
+
+    .header {
+        padding: 1rem 1.5rem;
+    }
+
+    #menu-btn {
+        display: inline-block;
+        cursor: pointer;
+        font-size: 3rem;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        left: -101%;
+        background-color: rgb(255, 171, 0);
+        font-weight: bolder;
+        width: 20rem;
+        height: 40rem;
+    }
+
+    .header .navbar a {
+        display: flex;
+        text-align: center;
+        line-height: 4.5rem;
+        font-size: 2.5rem;
+    }
+
+    .inicio {
+        padding-top: 10rem;
+    }
+
+    .header .navbar.active {
+        left: 0%;
+    }
+
+    .header .navbar a:hover {
+        color: #fff;
+    }
+
+    .inicio .image .img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+}
+
+
+@media (max-width:360px) {
+    html {
+        font-size: 35%;
+    }
+
+    .header {
+        padding: .8rem 1.4rem;
+    }
+}
